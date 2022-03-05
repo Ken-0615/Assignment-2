@@ -1,0 +1,44 @@
+void main() {
+  print ("            MARKSHEET         ");
+  
+  
+  num maths=0;
+  print("Maths $maths");
+  num phy=0.5;
+  print("Physics $phy");
+  num chem=9;
+  print('Chemistry $chem');
+  num urdu=5.5;
+  print("Urdu $urdu");
+  num eng= 7;
+  print("English $eng");
+  num obtmrks=maths+phy+chem+urdu+eng;
+  num total= 500;
+  print ("Obtain Marks $obtmrks");
+  
+  num percentage= (obtmrks/total)*100;
+
+  print("Your percentage is $percentage");
+  print("On rounding off your percentage it's "+ percentage.toStringAsFixed(2));
+  
+  if(percentage >=80 && percentage<100)
+  {print("A+ GRADE");}
+  
+  else if(percentage <80 && percentage >=70){
+  print("A GRADE");}
+  
+  else if(percentage >=60 && percentage<70)
+  {print("B GRADE");}
+  
+  else if(percentage >=50 && percentage<60)
+  {print("C GRADE");}
+  
+  else if(percentage >=40 && percentage<50)
+  {print("D GRADE");}
+  
+  else if(percentage >33 && percentage<40)
+  {print("E GRADE");}
+  
+  else if(percentage <=33)
+  {print("FAIL");}
+}
